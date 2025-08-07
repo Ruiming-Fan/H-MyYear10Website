@@ -12,26 +12,75 @@
 
     <!-- The Hero Section -------------------------------------------------------------------------------------- -->
     <section class="hero">
-        <img src="images\WebsiteHeader-1024x128.png" alt="change this too!">
+        <img src="images\WebsiteHeader-1024x128.png" alt="header">
         <div class="hero-text"></div>
     </section>
 
 <!-- Topic one ------------------------------------------------------------------------------------------------- -->
     <!-- The First Topic Section -->
     <section class="topic">
-        <!-- the topic title a big bar with text in it -->
+        <style>
+            .category-bar {
+              display: flex;
+              justify-content: space-evenly;
+              margin: 20px 0;
+            }
+          
+            .category-item {
+              padding: 10px 20px;
+              background-color: #eee;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+              font-size: 20px;
+              flex-shrink: 0;
+              transition: background-color 0.3s;
+            }
+          
+            /* 未选中颜色 */
+            .category-item:hover {
+              background-color: #ddd;
+            }
+          
+            /* 选中按钮颜色 */
+            .category-item.active {
+              background-color: #007bff;
+              color: white;
+            }
+          </style>
         <div class="topic-title">
-            <h1>Welcome!</h1>
+            <h1><div class="category-bar">
+                <button class="category-item" data-category="all">Home</button>
+                <button class="category-item" data-category="part1">3D Modeling</button>
+                <button class="category-item" data-category="part2">Vedio Cuting</button>
+                <button class="category-item" data-category="part3">Fusion Design</button>
+              </div></h1> 
         </div>
+
+        <script>
+            const buttons = document.querySelectorAll('.category-item');
+          
+            buttons.forEach(button => {
+              button.addEventListener('click', () => {
+                // 移除所有按钮的 active 类
+                buttons.forEach(btn => btn.classList.remove('active'));
+                // 给当前点击按钮添加 active 类
+                button.classList.add('active');
+          
+                // 这里可以加你切换内容的逻辑，比如显示对应分类内容
+              });
+            });
+          </script>
+        
         <!-- now a three column grid of images -->
         <div class="topic-content">
             <!-- one "card" which includes an image with a text below it -->
             <div class="topic-card">
-                <img src="images\Capture.PNG" alt="A picture of snowman">
-                <h2 class="topic-card-text"><a href="3D Model.html">3D Modeling</a></h2>
+                <img src="images\Capture.PNG" alt="A picture of snowman" width="180">
+                <h2 class="topic-card-text"></h2>
             </div>
             <div class="topic-card">
-                <img src="images/placeholder-1024x1024.png" alt="change this too!">
+                <img src="images\re.PNG" alt="holder">
                 <h2 class="topic-card-text">Placeholder image</h2>
             </div>
             <div class="topic-card">

@@ -32,14 +32,16 @@ img {
 .hero-text {
     font-size: 4em;
     font-weight: bold;
+
+
 }
 
 /* nice big font on a banner style background */
 .topic-title{
     color: white;
-    font-size: 2em;
-    padding: 0.1em 3em;
-    background-color: rgb(7, 184, 238);
+    font-size: 1.2em;
+    padding: 0.1em 2.5em;
+    background-color: rgb(20, 108, 134);
 }
 
 /* Three column grid with a nice big gap */
@@ -51,15 +53,15 @@ img {
     width: 70%;
     /* top margin of 3em and center right/left */
     margin: 3em auto;
+    background-color: rgb(20, 108, 134);
 }
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card{
-    background-color: rgb(7, 184, 238);
+    background-color: rgb(20, 108, 134);
     color: white;
     padding: 1em;
-    border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 /* Styling for the topic card titles */
@@ -77,4 +79,5 @@ img {
     color: white;
     text-align: right;
     padding: 3em 3em;
+
 }
