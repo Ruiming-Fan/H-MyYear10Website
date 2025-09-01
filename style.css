@@ -7,6 +7,7 @@ html {
     /* The Font Family- Really important!! */
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
 }
 
 /* reset for images to ensure they ar 100% of the parent container width */
@@ -53,12 +54,12 @@ img {
     width: 70%;
     /* top margin of 3em and center right/left */
     margin: 3em auto;
-    background-color: rgb(20, 108, 134);
+
 }
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card{
-    background-color: rgb(20, 108, 134);
+    background-color: rgb(0, 221, 255);
     color: white;
     padding: 1em;
     

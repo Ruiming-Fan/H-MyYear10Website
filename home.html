@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
+<body>
+
+    <!-- The Hero Section -------------------------------------------------------------------------------------- -->
+    <section class="hero">
+        <img src="images\WebsiteHeader-1024x128.png" alt="header">
+        <div class="hero-text"></div>
+    </section>
+
+<!-- Topic one ------------------------------------------------------------------------------------------------- -->
+    <!-- The First Topic Section -->
+    <section class="topic">
+        <style>
+            .category-bar {
+              display: flex;
+              justify-content: space-evenly;
+              margin: 20px 0;
+            }
+          
+            .category-item {
+              padding: 10px 20px;
+              background-color: #eee;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+              font-size: 20px;
+              flex-shrink: 0;
+              transition: background-color 0.3s;
+            }
+          
+            /* 未选中颜色 */
+            .category-item:hover {
+              background-color: #ddd;
+            }
+          
+            /* 选中按钮颜色 */
+            .category-item.active {
+              background-color: #007bff;
+              color: white;
+            }
+          </style>
+        <div class="topic-title">
+            <h1><div class="category-bar">
+                <a href="3D Model.html">
+                <button class="btn">3D Model</button></a>
+                <a href="Vedio Cutting.html">
+                <button class="btn">Vedio Cutting</button></a>
+                <a href="Fusion Design.html">
+                <button class="btn">Fusion Design</button></a>
+                <a href="Game Develop.html">
+                <button class="btn">Game Devlope</button></a>
+              </div></h1> 
+        </div>
+
+  <style>
+    /* 美化按钮 */
+    .btn {
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #007bff;
+    }
+  </style>
+        
+        <!-- now a three column grid of images -->
+        <div class="topic-content">
+            <!-- one "card" which includes an image with a text below it -->
+            <div class="topic-card">
+                <img src="images/placeholder-1024x1024.png" alt="A picture of snowman" width="180">
+                <h2 class="topic-card-text"></h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/placeholder-1024x1024.png" alt="holder">
+                <h2 class="topic-card-text">Placeholder image</h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/placeholder-1024x1024.png" alt="change this too!">
+                <h2 class="topic-card-text">Placeholder image</h2>
+            </div>
+            <div><h3>test</h3></div>
+        </div>
+    </section>
+<!-- End of topic one------------------------------------------------------------------------------------------ -->
+
+<!-- Copy and paste the section from above to make your next section -->
+
+
+
+    <!-- A Simple Website Footer ------------------------------------------------------------------------------ -->
+    <footer class="footer">
+        <p>&copy; 2025 My Showcase Website By Ruiming Fan</p>
+    </footer>
+
+<!-- The end of the whole page- no more content after this! -->
+</body>
+</html>
